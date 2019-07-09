@@ -10,4 +10,6 @@ The file needs to be `build` in order to used. Then an `image` is produced.
 
 ## Container
 
-Images can be executable which are `run` called `container`. Inside containers, there would be an OS (*nix) and a running app on it. Containers can be interactive in many ways like talking through protocols, sharing file systems. They are basically a computer with the most minimalistic setup.
+Images are executables which is called `container`. Inside containers, there would be an OS (*nix) and a running app on it.
+Containers can be interactive in many ways like talking through protocols, sharing file systems.
+They are basically a computer with the most minimalistic setup.
