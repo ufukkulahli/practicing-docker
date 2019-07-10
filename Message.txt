@@ -1,0 +1,3 @@
+Hello there!
+This file copied into Docker container file system.
+Message echoed back to your terminal.

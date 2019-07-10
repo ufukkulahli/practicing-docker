@@ -14,7 +14,7 @@ Images are executables which is called `container`. Inside containers, there wou
 Containers can be interactive in many ways like talking through protocols, sharing file systems.
 They are basically a computer with the most minimalistic setup.
 
-### Building Dockerfile
+### Commands to build Dockerfile
 
 | Command | Description |
 | ------- | ----------- |
@@ -24,3 +24,13 @@ They are basically a computer with the most minimalistic setup.
 | RUN     | Executes the commands. |
 | CMD     | Master command to run final desired result(like an app). Takes effect when container is run. |
 | EXPOSE  | Container starts to listen on specified port(s). |
+| VOLUME  | Lets mount volumes from host/other containers. |
+
+### Building Dockerfile
+
+There is example Dockerfile, Message.txt file.
+Dockerfile is based on Alpine Linux.
+Copies Message.txt into container.
+Runs echo command inside container prints greeting.
+Sets the master command as `cat Message.txt` when the container is run.
+
