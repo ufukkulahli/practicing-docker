@@ -10,11 +10,11 @@ The file needs to be `build` in order to used. Then an `image` is produced.
 
 ## Container
 
-Images are executables which is called `container`. Inside containers, there would be an OS (*nix) and a running app on it.
-Containers can be interactive in many ways like talking through protocols, sharing file systems.
+Images are executables which is then called `container`. Inside containers, there would be an OS (*nix) and a running app on it.
+Containers can be interactive in many ways like talking through protocols with each other/host, sharing file systems.
 They are basically a computer with the most minimalistic setup.
 
-### Commands to build Dockerfile
+## Commands to build Dockerfile
 
 | Command | Description |
 | ------- | ----------- |
@@ -26,11 +26,21 @@ They are basically a computer with the most minimalistic setup.
 | EXPOSE  | Container starts to listen on specified port(s). |
 | VOLUME  | Lets mount volumes from host/other containers. |
 
-### Building Dockerfile
+### Building a simple Dockerfile
 
-There is example Dockerfile, Message.txt file.
-Dockerfile is based on Alpine Linux.
-Copies Message.txt into container.
-Runs echo command inside container prints greeting.
-Sets the master command as `cat Message.txt` when the container is run.
+There is example Dockerfile ready to use.
 
+### Analogy of the Dockerfile
+
+* [FROM] Dockerfile is based on Alpine Linux.
+* [COPY] Copies Message.txt into container.
+* [RUN]  Runs echo command inside container prints greeting.
+* [CMD]  Sets the master command as `cat Message.txt` when the container is run.
+
+## Lifecycle
+
+* Create a `Dockerfile`,
+* `Build` it (kind of compiling source code),
+* An `Image` is created as a result,
+* `Run` the `Image`
+* Get a working `Container`
