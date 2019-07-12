@@ -44,3 +44,14 @@ There is example Dockerfile ready to use.
 * An `Image` is created as a result,
 * `Run` the `Image`
 * Get a working `Container`
+
+## Bringing Dockerfile to life
+
+After writing file, time to produce Image from it.
+
+```bash
+docker build -t my-docker-image .
+```
+
+* -t: helps to specify image name
+* . : points to current directory which Dockerfile exists
