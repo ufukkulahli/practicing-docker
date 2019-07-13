@@ -25,6 +25,7 @@ They are basically a computer with the most minimalistic setup.
 | CMD     | Master command to run final desired result(like an app). Takes effect when container is run. |
 | EXPOSE  | Container starts to listen on specified port(s). |
 | VOLUME  | Lets mount volumes from host/other containers. |
+| ENTRYPOINT | Configures a container that will run as an executable. |
 
 ### Building a simple Dockerfile
 
@@ -32,10 +33,10 @@ There is example Dockerfile ready to use.
 
 ### Analogy of the Dockerfile
 
-* [FROM] Dockerfile is based on Alpine Linux.
-* [COPY] Copies Message.txt into container.
-* [RUN]  Runs echo command inside container prints greeting.
-* [CMD]  Sets the master command as `cat Message.txt` when the container is run.
+* `[FROM]` Dockerfile is based on Alpine Linux.
+* `[COPY]` Copies Message.txt into container.
+* `[RUN]`  Runs echo command inside container prints greeting.
+* `[CMD]`  Sets the master command as `cat Message.txt` when the container is run.
 
 ## Lifecycle
 
@@ -55,3 +56,11 @@ docker build -t my-docker-image .
 
 * -t: helps to specify image name
 * . : points to current directory which Dockerfile exists
+
+## Bringing Image to life
+
+After producing the Image, time to run it.
+
+```bash
+docker run --name my-docker-container my-docker-image
+```
