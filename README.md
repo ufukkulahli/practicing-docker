@@ -64,3 +64,7 @@ After producing the Image, time to run it.
 ```bash
 docker run --name my-docker-container my-docker-image
 ```
+
+* --name: hepls to give name newly created container
+
+When the container is run we see the message that invoked by the `CMD` command. Then container stops.
