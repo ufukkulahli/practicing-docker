@@ -10,9 +10,11 @@ The file needs to be `build` in order to used. Then an `image` is produced.
 
 ## Container
 
-Images are executables which is then called `container`. Inside containers, there would be an OS (*nix) and a running app on it.
+Images are executables which are then called `container`. Inside containers, there would be an OS (*nix) and a running app on it.
 Containers can be interactive in many ways like talking through protocols with each other/host, sharing file systems.
 They are basically a computer with the most minimalistic setup.
+
+---
 
 ## Commands to build Dockerfile
 
@@ -22,8 +24,8 @@ They are basically a computer with the most minimalistic setup.
 | WORKDIR | Sets the working directory for commands like RUN, CMD, ENTRYPOINT, COPY, ADD. |
 | COPY    | Copy files/directories into container's file system. |
 | RUN     | Executes the commands. |
-| CMD     | Master command to run final desired result(like an app). Takes effect when container is run. |
-| EXPOSE  | Container starts to listen on specified port(s). |
+| CMD     | Master command to run final desired result(like an app). Takes effect when the container is run. |
+| EXPOSE  | The Container starts to listen on the specified port(s). |
 | VOLUME  | Lets mount volumes from host/other containers. |
 | ENTRYPOINT | Configures a container that will run as an executable. |
 
@@ -34,7 +36,7 @@ There is example Dockerfile ready to use.
 ### Analogy of the Dockerfile
 
 * `[FROM]` Dockerfile is based on Alpine Linux.
-* `[COPY]` Copies Message.txt into container.
+* `[COPY]` Copies Message.txt into the container.
 * `[RUN]`  Runs echo command inside container prints greeting.
 * `[CMD]`  Sets the master command as `cat Message.txt` when the container is run.
 
@@ -65,6 +67,20 @@ After producing the Image, time to run it.
 docker run --name my-docker-container my-docker-image
 ```
 
-* --name: hepls to give name newly created container
+* --name: helps to give name newly created container
 
-When the container is run we see the message that invoked by the `CMD` command. Then container stops.
+When the container is run we see the message that invoked by the `CMD` command. Then the container stops.
+
+## Containers
+
+There are commands to help manage containers. We can see currently running or all of them. We can start, stop, delete, restart or get into the working system.
+
+Usage:
+
+```bash
+docker container COMMAND
+```
+
+| Command | Description |
+| ------- | ----------- |
+| ls | Lists containers. |
