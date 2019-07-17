@@ -91,3 +91,10 @@ docker container COMMAND
 | top | Shows the running processes of the container. |
 | attach | Attaches local std-in-out-err streams to the container. |
 | exec | Runs the given command in the container. |
+
+First lists all containers then starts the container with given name.
+
+```bash
+docker container ls -a
+docker start my-docker-container
+```
