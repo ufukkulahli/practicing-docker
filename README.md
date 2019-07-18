@@ -68,6 +68,10 @@ docker run --name my-docker-container my-docker-image
 ```
 
 * --name: helps to give name newly created container
+* -i, --interactie: keeps stdin open
+* -t, --tty: allocates a pseudo-tty
+* -d, --detach: detached mode
+* -v, --volume: binds volumes between host and container
 
 When the container is run we see the message that invoked by the `CMD` command. Then the container stops.
 
