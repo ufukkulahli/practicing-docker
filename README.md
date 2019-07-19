@@ -64,7 +64,7 @@ docker build -t my-docker-image .
 After producing the Image, time to run it.
 
 ```bash
-docker run --name my-docker-container my-docker-image
+docker run --name my-docker-container my-docker-image COMMAND ARG
 ```
 
 * --name: helps to give name newly created container
@@ -72,6 +72,10 @@ docker run --name my-docker-container my-docker-image
 * -t, --tty: allocates a pseudo-tty
 * -d, --detach: detached mode
 * -v, --volume: binds volumes between host and container
+
+COMMAND
+
+eg: bash (gives the bash of the container)
 
 When the container is run we see the message that invoked by the `CMD` command. Then the container stops.
 
