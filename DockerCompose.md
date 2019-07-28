@@ -10,3 +10,5 @@ This tool allows to define and run multiple containers with the help of a `YAML`
 | volumes | Mounts directories between host and container. |
 | container_name | Gives name to the container. |
 | environment | Adds environment variables. |
+| command | Overrides the default command in Dockerfile. |
+| depends_on | Expresses dependencies between services. |
