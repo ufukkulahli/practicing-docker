@@ -12,3 +12,6 @@ This tool allows to define and run multiple containers with the help of a `YAML`
 | environment | Adds environment variables. |
 | command | Overrides the default command in Dockerfile. |
 | depends_on | Expresses dependencies between services. |
+| entrypoint | Overrides the default entrypoint in Dockerfile. |
+| env_file | Adds environment variables from given file. |
+| environment | Adds environment variables. |
