@@ -15,3 +15,6 @@ This tool allows to define and run multiple containers with the help of a `YAML`
 | entrypoint | Overrides the default entrypoint in Dockerfile. |
 | env_file | Adds environment variables from given file. |
 | environment | Adds environment variables. |
+| expose | Exposes ports. Not publishes to host. Only accessible to linked services. |
+| healthcheck | Helps to configure some commands to achive the status of desired services. |
+| labels | Adds metadata to containers. |
