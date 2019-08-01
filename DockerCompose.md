@@ -21,3 +21,5 @@ This tool allows to define and run multiple containers with the help of a `YAML`
 | logging | Adds logging configuration for the service. |
 | network_mode | Specifies network mode for the service. |
 | restart | Specifies restart policy for the service. |
+| stop_grace_period | Specifies waiting time before killing container. |
+| tmpfs | Mounts temporary file system inside the container. |
