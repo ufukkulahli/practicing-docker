@@ -41,7 +41,7 @@ docker run --name my-docker-container my-docker-image COMMAND ARG
 ```
 
 * --name: helps to give name newly created container
-* -i, --interactie: keeps stdin open
+* -i, --interactive: keeps stdin open
 * -t, --tty: allocates a pseudo-tty
 * -d, --detach: detached mode
 * -v, --volume: binds volumes between host and container
