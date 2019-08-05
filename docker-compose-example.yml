@@ -1,6 +1,6 @@
 version: '3'
 
-service:
+service:                                  # define which containers are going to be run as a 'service'
   db:
     container_name: my-docker-container
     build: .                              # current path with this file
