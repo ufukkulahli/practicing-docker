@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  mywebsite:
+    container_name: my-web-site
+    build:
+      context: .
+      dockerfile: HttpServer.Dockerfile
+  websiteclient:
+    container_name: web-site-client
+    build:
+      context: .
+      dockerfile: WebClient.Dockerfile
