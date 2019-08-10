@@ -1,13 +1,25 @@
 version: '3.7'
 
+networks:
+  ntwclientandserver:
+    driver: bridge
+
 services:
   mywebsite:
     container_name: my-web-site
     build:
       context: .
       dockerfile: HttpServer.Dockerfile
+    ports:
+      - 8080:8080
+    networks:
+      - ntwclientandserver
   websiteclient:
     container_name: web-site-client
     build:
       context: .
       dockerfile: WebClient.Dockerfile
+    depends_on:
+      - mywebsite
+    networks:
+      - ntwclientandserver
