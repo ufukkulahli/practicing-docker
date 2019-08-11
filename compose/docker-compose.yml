@@ -10,10 +10,9 @@ services:
     build:
       context: .
       dockerfile: HttpServer.Dockerfile
-    ports:
-      - 8080:8080
     networks:
       - ntwclientandserver
+    entrypoint: /bin/sh
   websiteclient:
     container_name: web-site-client
     build:
