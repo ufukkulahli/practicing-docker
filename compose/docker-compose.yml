@@ -1,18 +1,8 @@
 version: '3.7'
 
-networks:
-  ntwclientandserver:
-    driver: bridge
 
 services:
-  mywebsite:
-    container_name: my-web-site
-    build:
-      context: .
-      dockerfile: HttpServer.Dockerfile
-    networks:
-      - ntwclientandserver
-    entrypoint: /bin/sh
+
   websiteclient:
     container_name: web-site-client
     build:
@@ -20,5 +10,13 @@ services:
       dockerfile: WebClient.Dockerfile
     depends_on:
       - mywebsite
-    networks:
-      - ntwclientandserver
+
+  mywebsite:
+    container_name: my-web-site
+    build:
+      context: .
+      dockerfile: HttpServer.Dockerfile
+    ports:
+      - "5005:8080"
+    stdin_open: true
+    tty: true
