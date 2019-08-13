@@ -1,5 +1,4 @@
-version: '3.7'
-
+version: "3.7"
 
 services:
 
@@ -18,5 +17,3 @@ services:
       dockerfile: HttpServer.Dockerfile
     ports:
       - "5005:8080"
-    stdin_open: true
-    tty: true
