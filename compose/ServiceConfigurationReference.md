@@ -12,7 +12,6 @@
 | depends_on        | Expresses dependencies between services.                                    |
 | entrypoint        | Overrides the default 'entrypoint' in Dockerfile.                           |
 | env_file          | Adds environment variables from a given file.                               |
-| environment       | Adds environment variables.                                                 |
 | expose            | Exposes ports. Not publishes to host. Only accessible to linked services.   |
 | healthcheck       | Helps to configure some commands to achieve the status of desired services. |
 | labels            | Adds metadata to containers.                                                |
