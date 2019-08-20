@@ -4,4 +4,4 @@ Compose file (a `YAML` file which is generally called `docker-compose.yml`) allo
 [Here is an example yml file.](docker-compose-example.yml)
 
 `docker-compose` CLI helps to build compose file & runs multiple containers; has several effects on that file.  
-[Here is some compose commands.](DockerCompose.md)
+[Here is some of the compose commands.](DockerCompose.md)

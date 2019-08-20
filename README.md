@@ -14,6 +14,10 @@ Images are executables which are then called `container`. Inside containers, the
 Containers can be interactive in many ways like talking through protocols with each other/host, sharing file systems.
 They are basically a computer with the most minimalistic setup.
 
+## Managing multiple containers
+
+When several Docker containers exist, managing them manually gets hard. With this purpose, there is a tool called `compose`. It allows to define and run multiple containers.
+
 ---
 
 ## Contents
@@ -22,3 +26,4 @@ They are basically a computer with the most minimalistic setup.
 * [Building Dockerfile](BuildDockerfile.md)
 * [Manage images](ManageImages.md)
 * [Manage containers](ManageContainers.md)
+* [Compose](compose/README.md)
